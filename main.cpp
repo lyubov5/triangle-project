@@ -15,6 +15,6 @@ int main() {
     std::cout << "Периметр равен " << getPerimeter(a, b, c) << std::endl;
     std::cout << "Площадь равна " << getArea(a, b, c) << std::endl;
 std::cout << "Тип по углам: " << getTriangleTypeByAngles(a, b, c) << std::endl;
-    return 0;
+return 0;
 }
 
