@@ -6,6 +6,11 @@ int main() {
     setlocale(LC_ALL, "Russian");
     double a, b, c;
     inputSides(a, b, c);
-    std::cout << "Стороны: " << a << ", " << b << ", " << c << std::endl;
+
+    if (!isTriangleValid(a, b, c)) {
+        std::cout << "Треугольник не существует" << std::endl;
+        return 0;
+    }
+    std::cout << "Треугольник существует" << std::endl;
     return 0;
 }
